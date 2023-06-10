@@ -130,7 +130,9 @@ endmodule
 # Encoder
 ![Screenshot 2023-06-10 111959-removebg-preview](https://github.com/Jeevithaelumalai/Experiment-08-Encoders-and-decoders-/assets/118708245/ab369ccb-d076-4868-a1e3-d1bc08ead0ee)
 # Decoder:
-![Uploading image.png…]()
+
+![244666606-d81de2a8-5be5-4a75-aae1-8925b1c27379](https://github.com/Jeevithaelumalai/Experiment-08-Encoders-and-decoders-/assets/118708245/fbc0cb9c-5ede-4d18-a620-6d2b6965aea3)
+
 
 
 ### RESULTS :
