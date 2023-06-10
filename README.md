@@ -55,42 +55,83 @@ D7 = X Y Z
 ## Figure -04 8 to 3 Decoder implementation 
 
 ### Procedure
-/* write all the steps invloved */
+
+1.create module encoder and decoder.
+
+2.Get inputs and outputs for encoders and decoders.
+
+3.perform or operation for encoder and and logic for decoders.
+
+4.perform RTL LOGIC and get waveform
 
 
 
 ### PROGRAM 
 /*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: JEEVITHA E
+RegisterNumber:  212222230054
 */
+```
+i]Encoder
 
+module encoder(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+output a,b,c;
+input d0,d1,d2,d3,d4,d5,d6,d7;
+or(a,d4,d5,d6,d7);
+or(b,d2,d3,d6,d7);
+or(c,d1,d3,d5,d7);
+endmodule
 
+ii]Decoder
 
+module decoder(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+output d0,d1,d2,d3,d4,d5,d6,d7;
+input a,b,c;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
+endmodule
+
+```
 
 
 
 ### RTL LOGIC  
 
-
-
-
-
+# ENCODER:
+![image](https://github.com/Jeevithaelumalai/Experiment-08-Encoders-and-decoders-/assets/118708245/695b17dd-a11d-49c2-93b0-cc29dda51a4b)
 
 
 
 ### TIMING DIGRAMS  
+# DECODER:
+![image](https://github.com/Jeevithaelumalai/Experiment-08-Encoders-and-decoders-/assets/118708245/aacb3c13-dd4c-42ce-ab5c-c513cc80d5df)
 
 
 
 
 
-### TRUTH TABLE 
+### TRUTH TABLE :
+# ENCODER:
+
+![image](https://github.com/Jeevithaelumalai/Experiment-08-Encoders-and-decoders-/assets/118708245/c5cfb607-1b9b-4885-bf57-ce63767cbc2f)
+# DECODER:
+
+![image](https://github.com/Jeevithaelumalai/Experiment-08-Encoders-and-decoders-/assets/118708245/d7c61d5e-09fa-4b5e-9d3b-de0b3ffd3545)
 
 
+## TRUTH TABLE
+# Encoder
+![Screenshot 2023-06-10 111959-removebg-preview](https://github.com/Jeevithaelumalai/Experiment-08-Encoders-and-decoders-/assets/118708245/ab369ccb-d076-4868-a1e3-d1bc08ead0ee)
+# Decoder:
+![Uploading image.png…]()
 
 
-
-
-### RESULTS 
+### RESULTS :
+Thus the program to desing encoder and decoder is done.
